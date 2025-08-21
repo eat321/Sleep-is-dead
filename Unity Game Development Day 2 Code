@@ -1,0 +1,74 @@
+using UnityEngine;
+
+public class Helloworld : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        int a = 5;
+        int b = 3;
+        int c = 4;
+        int d = 5;
+
+        string str = null;
+        string str2 = "abc";
+
+        string str3 = str ?? str2;
+
+        str3 = null ?? str2; // null말고 무조건 str2 선택
+        str3 = str ?? "default"; // 무조건 str 선택 null값이 아님
+        str ??= str2; // str값이 null이면 str2을 넣고 아니면 그대로 간다 
+        str = str ?? str2; // 윗에 있는식에 대한 풀어쓰기
+
+
+        
+        
+        /*
+        string str = null; //  아무것도 아님
+
+        str = ""; // 빈 문자열
+        str = null; // 아무것도 들어 있지 않음
+
+
+        
+        // 3항 연산자 활용
+        a = b > c ? 1 : 2; // 가독성 안좋음
+        a = (b > c) ? 1 : 2; // () 사용 구분 가독성 매우좋음
+        
+        a = b + c; // a = 7
+        a = a + 2; // 7 + 2 = a = 9
+        a += 2; // 9 + 2 = a = 11
+        a *= 2; // 11 * 2 = a = 22
+        a -= 2; // 22 - 2 = a = 20
+        a /= 2; // 20 / 2 = a = 10
+
+        // 기호자체는 둘다 같은 / 내부적으로 처리방식이 다름
+        a++ ; // 1올리기 a = 11 
+        a +=1 ; // 1올리기 a = 12
+        a-- ;  //1내리기 a = 11
+        a -=1; //1내리기 a = 10
+        a++; 
+        ++a;
+        
+         Debug.Log(a < b || c < d);
+         Debug.Log(!(a < b) && c < d);
+         Debug.Log(!true);
+         Debug.Log(!(a + b > c) && a + c > b);
+        
+        Debug.Log(a < b);
+        Debug.Log(a > b);
+        Debug.Log(a <= b);
+        Debug.Log(a >= b);
+
+        Debug.Log(a == b);
+        Debug.Log(a != b);
+        */
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
