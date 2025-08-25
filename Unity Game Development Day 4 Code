@@ -1,0 +1,199 @@
+using System.Threading;
+using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+
+
+        // 2단부터 9단까지 구구단 만들기 for문 활용
+        //for (int number =2; number<=9; number++)
+        //{
+        //    for(int number2 = 1;number2 <=9; number2++)
+        //    {
+        //        Debug.Log(number + "*" + number2 + "="+ (number * number2));
+        //    }
+        //}
+
+
+        //2단부터 9단까지 구구단 만들기 while문 활용
+        //int number = 2; int number2 = 1;       
+        //while (number <= 9)
+        //{
+            
+        //    while (number2<=9)
+        //    {
+                  //내부 루푸값을 잘인지하고 초기화 을 잘해주어야 한다!
+        //        Debug.Log(number + "*" + number2 + "=" + (number * number2) + "입니다!");
+        //        number2++;
+                
+        //    }
+        //    number++;
+        //    number2 = 1;
+            
+        //}
+        
+
+
+        //첫번째 줄에는 *이 한개 두번째 부터는 *2이 2개씩 증가하기 for문 활용
+        //int Count = 0;
+        //string Line = "";
+        //for(int a =1;a <=10; a++)
+        //{
+        //    Count++;
+        //    Line += "*";
+        //    Debug.Log(Line + "이" + Count + "개 입니다!");
+        //    Line += "*";
+        //    Count +=1;
+        //}
+
+        //좀더 간단한 코드 for문 계산식  사용!
+        //for(int a=0; a<10; a++)
+        //{
+        //    string stars = "";
+
+        //    for(int b =0; b<a*2+1; b++)
+        //    {
+        //        stars += "*";
+                
+        //    }
+        //    Debug.Log(stars);
+        //}
+        
+
+
+
+
+        
+
+        //첫번째 줄에는 *이 한개 두번째 부터는 *2이 2개씩 증가하기 while문 활용
+        /*string Line = "";
+        int a = 1;
+        int Count = 0;
+        while(a <=10)
+        {
+            a++;
+            Count++;
+            Line += "*";
+            Debug.Log(Line + "이" + Count + " 개입니다!");
+            if(a <=10)
+            {
+                Line += "*";
+                Count++;
+            }
+
+        }
+        */
+
+
+
+
+        //a에 b을 몇번곱하면 1000을 넘는지 for문 활용
+        //int b = 2; int count = 0; int a = 100;
+        //for (; a <= 1000; a = a * b)
+        //{
+
+        //    count ++;
+        //    Debug.Log(a + "현재 a  값입니다.");
+        //}
+
+        //Debug.Log(count + "번째 곱하면 1000을 넘습니다! 현재의 a값"+a);
+
+ 
+        ////a에 b를 몇번 곱하면서 1000을 넘는지 알아내는 프로그램 while문
+        //int a = 100; int b = 2;
+        //int count = 0;  
+
+        //while (a <= 1000)
+        //{
+
+        //    a = a * b;
+        //    count++;
+        //    Debug.Log("현재 a" +a+ "의값");
+
+
+        //}
+        //Debug.Log(count + "번 곱하면 1000을 넘습니다!");
+
+
+
+
+
+
+
+
+
+        //for(int a =0; a<10;a++) //a = 1
+        //{
+        //    string stars = "";
+
+        //    for (int b=0 ; b<a ; b++) // b = 1
+        //    {
+        //        stars +="*";
+
+        //    }
+        //    Debug.Log(stars);
+        //}
+
+
+
+        //for(int  a = 1 ; a <10 ;a++ ) // 정수형변수 a생성 최초1을 넣음 // a과 10보다 작을때 까지 // a을 1씩 증가시킨다 
+        //{
+        //    Debug.Log(a); // 조건이 충족 되는 동안에는 계속 a값을 출력
+        //}
+
+
+
+        //float meter = 0.0001f;
+        //int count = 0;
+        //while (meter <=1) //true 사용간에 주의 필요함
+        //{
+        //    count++;
+        //    meter *= 2;
+
+
+        //    if (meter > 0.5f) // 0.5 미터 가되면 바로 반복문 밖으로 나가진다. // 조건이 충족되지 않으면 실행되진 않음
+        //                      //break; // break 만나는 수간 바로 반복문 밖으로 나가진다.
+        //        continue;// 만나는수간 바로 다시한번 조건이 맞는지 확인을 함
+        //    Debug.Log(count + "번 접었습니다" + meter);
+        //}
+        //Debug.Log(count + "번 접었습니다");
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        //int i = 100;
+
+        //do
+        //{
+        //    Debug.Log(i);
+
+        //} while (i < 10);
+
+        //float meter = 0.0001f;
+        //int count = 0;
+        //while (meter <=1)
+        //{
+        //    count++;
+        //    meter *= 2;
+        //}
+        //Debug.Log(count + "번 접었습니다");
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        //int a = 0;
+        //while (a < 10)
+        //{
+        //    Debug.Log(a);
+        //    a += 1;
+        //}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
