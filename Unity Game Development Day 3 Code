@@ -1,0 +1,197 @@
+using UnityEngine;
+
+public class HelloWORLD : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+     
+     
+        int number1 = 10;
+        int number2 = 20;
+        int number3 = 0;
+        string World = "+";
+
+        switch (World)
+        {
+            case "+":
+                number3 = number1 + number2;
+                //Debug.Log(number1+"더하기"+number2+"는"+number3+"입니다.");
+                break;
+
+            case "-":
+                number3 = number1 - number2;
+                //Debug.Log(number1 + "빼기" + number2 + "는" + number3 + "입니다.");
+                break;
+            case "*":
+                number3 = number1 - number2;
+                //Debug.Log(number1 + "곱하기" + number2 + "는" + number3 + "입니다.");
+                break;
+            case "/":
+                number3 = number1 / number2;
+                //Debug.Log(number1 + "나누기" + number2 + "는" + number3 + "입니다.");
+                break;
+        }
+        Debug.Log(number3);
+     
+    
+
+
+        /*
+        string World = "+";
+        int number1 = 20;
+        int number2 = 10;
+        double sum = 0;
+        if(World == "+")
+        {
+             sum = number1 + number2;
+            Debug.Log(number1 + "더하기" + number2 + "은" + sum + "입니다");
+        }
+        else if(World == "-")
+        {
+            sum = number1 - number2;
+            Debug.Log(number1 + "뺴기" + number2 + "은" + sum + "입니다");
+        }
+        else if(World == "*'")
+        {
+            sum = number1 * number2;
+            Debug.Log(number1 + "곱하기" + number2 + "은" + sum + "입니다");
+        }
+        else if(World == "/")
+        {
+            sum = number1 / number2;
+            Debug.Log(number1 + "나누기" + number2 + "은" + sum + "입니다");
+        }
+        */
+
+
+        /* //  윤년 구하기 switch문 
+        int Year = 2100;
+        bool number = (Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0);
+        switch (number)
+        {
+            case (true):
+                Debug.Log(Year + "윤년입니다.");
+                break;
+            case (false):
+                Debug.Log(Year + "평년입니다.");
+                break;
+            default:
+                Debug.Log("잘못된 년도입니다."+ Year);
+                break;
+        }
+        */
+
+
+
+
+     /* // 윤년 구하기 if문
+        int Year = 1900;
+        
+        if ((Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0))
+        {
+            Debug.Log(Year + "윤년입니다.");
+        }
+        else
+        {
+            Debug.Log(Year + "평년입니다.");
+        }
+     */
+         
+       /*  //양수, 음수, 0인지 구하는 방법  switch 문
+        double number = 0.0001;
+
+        switch (number)
+        {
+            case > 0:
+                Debug.Log("양수 입니다.");
+                break;
+            
+            case < 0:
+                Debug.Log("음수 입니다");
+                break;
+
+            case 0:
+                Debug.Log("0 입니다");
+                break;
+
+            default :
+                Debug.Log("양,음 0 도 아님");
+                break;
+        }
+       */
+
+
+        /* // 양수, 음수, 0 인진 구하는 방법 if문
+        int  number = 0;
+
+        if (number > 0)
+        {
+            Debug.Log ("정수 입니다");
+        }
+        else if (number < 0)
+        {
+            Debug.Log("음수 입니다.");
+        }
+        else if (number  == 0)
+        {
+            Debug.Log("0 입니다");
+        }
+        */
+
+
+        /* 
+          string num = "?"; // 문자열 변수 num 생성
+
+
+           switch (num) // num 문자열 변수을 switch 조건문에 기입
+          {
+              case "박박": // num 안에 있는 값하고 해당케이스 이름이 일치하면 아래 코드실행
+                  Debug.Log("박박 은 최고야");
+                  break;
+
+              case "노노":
+                  Debug.Log("아니야");
+                  break;
+
+              case "이빨":
+                  Debug.Log("빨대");
+                  break;
+              default:
+                  Debug.Log(num + "... 일치하는 케이스 없음 해당되지 않음");
+                  break;
+
+                  /*
+                   switch (num) // 2개에 조건이 일치해야만 실해되는 조건문
+                  {
+                      case "박박": 
+                      case "박박2":
+                      Debug.Log("박박 은 최고야");
+                      break;
+                  }
+        */
+        
+        
+        /*
+         int age = 28;
+                //  흐름이 중요함
+         if (age < 20) // 조건이 참이면 실행
+         {
+           Debug.Log("애기");
+         }
+         else if (age<30) // 참이 아니면 실행
+         {
+           Debug.Log("청년");
+         }
+         else // 1,2차 조건에 전무 해당되지 않으면 실행
+         {
+           Debug.Log("아재");
+         }
+        */
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
